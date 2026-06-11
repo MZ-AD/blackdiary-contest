@@ -1,0 +1,307 @@
+/* ================= BODY & CONTAINER ================= */
+*, *::before, *::after {
+  box-sizing: border-box; /* Ensure padding/border included in width */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+ background: url('../assets/0101.jpg') no-repeat center center fixed;
+ background-size: cover;
+  position: relative;
+}
+
+/* Add a dark blur overlay */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px); /* Adjust blur intensity */
+  background-color: rgba(0,0,0,0.6); /* Dark overlay to make text readable */
+  z-index: -1; /* Keep it behind content */
+}
+
+
+.container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #0f0f0f;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+}
+
+/* ================= HEADINGS ================= */
+h1, h2, h3 {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* ================= FORM LABELS & INPUTS ================= */
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  width: 100%;           /* Full width inside container */
+  padding: 0.8rem;
+  margin: 0.5rem 0;      /* Uniform vertical spacing */
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 5px;
+  color: #ffffff;
+  font-family: "Inter", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #d4af37;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+/* ================= LEGAL / IP BOX ================= */
+.legal-box {
+  max-height: 220px;
+  overflow-y: auto;
+  background: #111;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+}
+
+/* ================= CHECKBOXES & PRIVACY ================= */
+.checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.checkbox input[type="checkbox"] {
+  margin-right: 0.6rem;
+  transform: scale(1.2);
+}
+
+.privacy a {
+  color: #d4af37;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.privacy a:hover {
+  color: #fff;
+}
+
+/* ================= SIGNATURE PADS ================= */
+.signature-pad {
+  width: 100%;
+  height: 150px;
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  cursor: crosshair;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+}
+
+.signature-actions{
+    margin-bottom: 10px;
+}
+
+/* ================= INSTRUCTIONS BOX ================= */
+.instructions {
+  background: #111;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  border: 1px solid #333;
+}
+
+.instructions p {
+  margin-bottom: 0.8rem;
+}
+
+/* ================= BUTTONS ================= */
+/* ================= BUTTONS ================= */
+button.primary-btn {
+  background-color: #0b0b0b;   /* Black background */
+  color: #ffffff;              /* White text */
+  border: 1px solid #ffffff;   /* White border */
+  border-radius: 3px;          /* Slightly rounded corners */
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.primary-btn:hover {
+  background-color: #ffffff;   /* White background on hover */
+  color: #0b0b0b;             /* Black text on hover */
+  border-color: #ffffff;       /* Keep border white */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+}
+
+a.secondary-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #0b0b0b;   /* Black background */
+  color: #ffffff;              /* White text */
+  border: 1px solid #ffffff;   /* White border */
+  border-radius: 3px;          /* Slightly rounded corners */
+  padding: 0.8rem 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a.secondary-btn:hover {
+  background-color: #ffffff;   /* White background on hover */
+  color: #0b0b0b;             /* Black text on hover */
+  border-color: #ffffff;       /* Keep border white */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+}
+
+
+/* ================= SUBMIT PART 1 BUTTON ================= */
+button.submit-part1-btn {
+  background-color: #ffffff;   /* Start white */
+  color: #0b0b0b;             /* Black text */
+  border: 1px solid #ffffff;   /* White border initially */
+  border-radius: 3px;          /* Slightly rounded corners */
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.submit-part1-btn:hover {
+  background-color: #0b0b0b;  /* Black background on hover */
+  color: #ffffff;             /* White text on hover */
+  border-color: #ffffff;      /* White border */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional subtle glow */
+}
+
+
+/* ================= CENTERED HEADINGS ================= */
+.center-title {
+  text-align: center; 
+}
+
+.section-title {
+  text-align: center;       /* Center the heading */
+  margin-top: 2.8rem;       /* Add top margin */
+  margin-bottom: 1rem;      
+  color: white;             
+}
+
+
+
+
+
+/* ================= SOCIAL MEDIA SECTION ================= */
+.social-media-section {
+  background-color: #111;        /* Dark background like other instruction boxes */
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+  box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.05);
+  margin-top: 50px;
+}
+
+.social-media-section h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: white;             /* Gold headings to match theme */
+}
+
+.social-media-section ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.social-media-section ul li {
+  margin-bottom: 0.6rem;
+}
+
+.social-media-section a {
+  color: white;
+  text-decoration: underline;
+  transition: all 0.3s ease;
+}
+
+.social-media-section a:hover {
+  color: #ffffff;
+}
+
+.UES{
+    margin-bottom: 30px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  input[type="file"] {
+    font-size: 16px;
+  }
+}

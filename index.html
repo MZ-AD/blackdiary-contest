@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Diary 1887 – How to Enter</title>
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <header class="page-header">
+    <h1 class="center-title">How to Enter</h1>
+      <p>
+        Everyone must complete Part 1, which includes the social media contest
+        with daily winners. Only students who wish to enter the essay contest
+        should complete Part 2.
+      </p>
+    </header>
+
+    <!-- PART 1 -->
+    <section class="form-section">
+      <h2 class="section-title">Part 1 – Social Media Contest (Required)</h2>
+
+
+      <form id="part1Form">
+
+        <h3>Student Information</h3>
+
+        <label>Name
+          <input type="text" name="student_name" required />
+        </label>
+
+        <label>School Email
+          <input type="email" name="school_email" required />
+        </label>
+
+        <label>Personal Email
+          <input type="email" name="personal_email" required />
+        </label>
+
+        <label>Name of School
+          <input type="text" name="school_name" required />
+        </label>
+
+        <label>City
+          <input type="text" name="city" required />
+        </label>
+
+        <label>Grade
+          <input type="text" name="grade" required />
+        </label>
+
+        <h3>Parent / Legal Guardian Information</h3>
+
+        <label>Parent or Legal Guardian Name
+          <input type="text" name="parent_name" required />
+        </label>
+
+        <label>Parent or Legal Guardian Email Address
+          <input type="email" name="parent_email" required />
+        </label>
+
+        <h3>Public Social Media Accounts</h3>
+
+        <label>Public Facebook Account Name
+          <input type="text" name="facebook" />
+        </label>
+
+        <label>Public TikTok Account Name
+          <input type="text" name="tiktok" />
+        </label>
+
+        <label>Public Instagram Account Name
+          <input type="text" name="instagram" />
+        </label>
+
+        <!-- IP & MEDIA RELEASE -->
+        <h3>IP & Media Release</h3>
+
+        <div class="legal-box">
+          <p>
+            By entering the Black Diary 1887 High School Social Media & Essay Contest,
+            the student and parent or legal guardian give permission for Black Diary
+            1887 to use the student’s submitted work—including essays, photos, videos,
+            audio, and social media posts—as well as the student’s first name, image,
+            voice, school name, and city for educational, promotional, and informational
+            purposes...
+          </p>
+        </div>
+
+        <label class="checkbox">
+          <input type="checkbox" required />
+          I agree to the IP & Media Release
+        </label>
+
+        <p class="privacy">
+          <a href="#" target="_blank">Privacy Policy</a>
+        </p>
+
+       <h3>Signatures</h3>
+<div class="signature-wrapper">
+  <label>Student Signature</label>
+  <canvas id="studentSignature" class="signature-pad"></canvas>
+  <div class="signature-actions">
+    <button type="button" class="undo-signature-btn" onclick="undoSignature('studentSignature')">&#x21BA;</button>
+  </div>
+</div>
+
+<div class="signature-wrapper">
+  <label>Parent Signature</label>
+  <canvas id="parentSignature" class="signature-pad"></canvas>
+  <div class="signature-actions">
+    <button type="button" class="undo-signature-btn" onclick="undoSignature('parentSignature')">&#x21BA;</button>
+  </div>
+</div>
+
+
+
+       
+       <div class="instructions social-media-section">
+  <h3 class="section-title">Follow on Social Media</h3>
+  <p>(Daily $25 cash or gift card winners on each platform: Facebook, Instagram, and TikTok)</p>
+
+  <h4>Download the Free Black Diary 1887 Self-Guided Tour App</h4>
+  <ul>
+    <li>iPhone: <a href="https://apps.apple.com/us/app/black-diary/id6550890504" target="_blank">Download on App Store</a></li>
+    <li>Android: <a href="https://play.google.com/store/apps/details?id=com.blackdiary" target="_blank">Download on Google Play</a></li>
+  </ul>
+
+  <h4>How to Participate</h4>
+  <ul>
+    <li>Follow <strong>@BlackDiary1887</strong> on at least one of the following: Facebook, Instagram, or TikTok.</li>
+    <li>You can be a daily winner once per channel.</li>
+    <li>You can be the grand prize winner on more than one channel.</li>
+    <li>Create a post identifying a notable Black person (dead or alive) or place significant to Black culture in your city to feature on @BlackDiary1887.</li>
+    <li>The post can be a static image or a reel up to 15 seconds long.</li>
+    <li>Posts are evaluated on content quality and engagement.</li>
+    <li>Tag <strong>@BlackDiary1887</strong> in your post.</li>
+    <li>Include hashtags: <strong>#Blackdiary1887HSContest2026 #whoshouldbeonblackdiary1887</strong></li>
+  </ul>
+</div>
+
+
+       <button type="submit" class="submit-part1-btn">Submit Part 1</button>
+
+
+      </form>
+
+      <a href="part2.html" class="secondary-btn">
+        Go to Part 2 – Essay Contest
+      </a>
+
+    </section>
+    <p style="margin-top: 2rem; font-weight: 600; color: white; text-align: center;">
+  There will be a Winner in Each City and One National Winner
+</p>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Part 2 – Essay Contest</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <main class="container">
+    <h1 class="center-title">Part 2 – Essay Contest</h1>
+
+    <form id="part2Form">
+
+      <label>Name
+        <input type="text" name="student_name" required />
+      </label>
+
+      <label>School Email
+        <input type="email" name="school_email" required />
+      </label>
+
+      <h3 class="section-title">Essay Instructions</h3>
+      <p>
+        Identify a notable Black person (dead or alive) or place with significance
+        to Black culture in your city. Write a 250–350 word essay explaining the
+        significance and why you are inspired.
+      </p>
+
+      <div class="instructions">
+        <h4>Essays are read and scored on a rolling basis considering the following:</h4>
+        <ul>
+          <li>Instructions followed</li>
+          <li>Originality</li>
+          <li>Grammar and spelling</li>
+          <li>The number of your social media accounts following <strong>@BlackDiary1887</strong> 
+              (Maximum is one account each on Facebook, Instagram, and TikTok)
+          </li>
+        </ul>
+      </div>
+
+      <label>Paste Essay
+        <textarea name="essay_text" rows="10" required></textarea>
+      </label>
+
+      <label class="UES">Upload Essay (PDF or Word)
+        <input type="file" name="essay_file" accept=".pdf,.doc,.docx" />
+      </label>
+
+      <button type="submit" class="primary-btn submit-part2-btn">
+        Submit Essay
+      </button>
+
+    </form>
+  </main>
+
+</body>
+</html>
